@@ -402,6 +402,17 @@ under the License.
 				<module>flink-sql-connector-opensearch2</module>
 			</modules>
 		</profile>
+		<profile>
+			<id>opensearch3</id>
+			<activation>
+				<jdk>[11,)</jdk>
+			</activation>
+			<modules>
+				<module>flink-connector-opensearch3</module>
+				<module>flink-connector-opensearch3-e2e-tests</module>
+				<module>flink-sql-connector-opensearch3</module>
+			</modules>
+		</profile>
 		<!-- The spotless comes from flink-connector-parent and needs version bump to support JDK-21 -->
 		<!-- Remove this profile once we drop the support of 1.x release line -->
 		<profile>
